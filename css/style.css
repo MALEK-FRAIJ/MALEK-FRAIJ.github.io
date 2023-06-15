@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=League+Spartan:wght@200&display=swap');
+
+:root {
+    --cairoFont: 'Cairo', sans-serif;
+    --SpartanFont: 'League Spartan', sans-serif;
+    --PoppinsFont: 'Poppins', sans-serif;
+
+    --background-transparent: transparent;
+    --shadowBoxVar: 0 5px 15px rgba(0, 0, 0, 0.466);
+
+    --bt-colorPrimary: #2289FF;
+    --bt-colorSecondary: #314862 !important;
+    --bt-color-acent: #193F6A;
+    --bk-colorDW: #eee;
+    --sectionBackground: #21656610;
+    --navHoverColor: #407e8062;
+    --backgroundMainColor: #216566;
+    --bdyColor: #644d4d15;
+    --heroH2Color: #154b5c;
+    --backgroundMainColor-sp: #01c2bf;
+
+    --headingColor: #222;
+    --fontColor: #d5dee0;
+    --orangeColor: #ff6600;
+    --darkFont: #050505;
+    --uxBackgroundColor: #fdd7bd33;
+    --dropBackgroundColor: #d3d5dfc7;
+    --whiteColor: #ffffff;
+}
+
+.btn-link {
+    background-color: #eee;
+
+}
+
+.bk-color {
+    background-color: var(--bk-colorDW);
+}
+
+.btn-w-100 {
+    width: 100%;
+}
+
+.form-check-input:focus {
+    color: var(--backgroundMainColor);
+}
+
+.colorPrimary {
+    color: var(--backgroundMainColor);
+}
+
+.colorSecondary {
+    color: var(--orangeColor);
+}
+
+.color-acent {
+    color: var(--heroH2Color);
+}
+
+
+/*  */
+.navbar-brand {
+    color: var(--whiteColor);
+    font-weight: 600;
+}
+
+.navbar-brand .icon-logo {
+    color: var(--orangeColor);
+}
+
+.navbar-brand:hover {
+    color: var(--whiteColor);
+}
+
+.navbar,
+.dropdown-menu {
+    background-color: var(--backgroundMainColor);
+
+}
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+    color: var(--whiteColor);
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.nav-item {
+    color: var(--whiteColor);
+    padding: 0 .1em;
+    transition: background 0.4s;
+    cursor: pointer;
+}
+
+.nav-item:hover,
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--navHoverColor);
+    border-radius: 5px;
+}
+
+.nav-item.login {
+    border: 2px solid var(--navHoverColor);
+    /*  border-radius: 30px 0px 30px 30px; */
+}
+
+.navbar-toggler {
+    color: var(--whiteColor);
+    font-size: 1.7rem;
+}
+
+/*  */
+
+.form-check {
+    font-size: 1.2rem;
+}
+
+.drop-filter {
+    background-color: var(--whiteColor);
+
+}
+
+.menu-size {
+    width: 22rem;
+}
+
+.form-check:hover,
+.form-check-label:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.btn-main {
+    background-color: var(--backgroundMainColor);
+    color: var(--whiteColor);
+    transition: background .5s;
+    border-radius: 30px 0px 30px 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+
+.btn-main:hover {
+    color: var(--whiteColor);
+    background-color: var(--orangeColor);
+
+}
+
+.btn-filter-drop {
+    border: 1px solid var(--dropBackgroundColor);
+}
+
+.btn-filter-drop:hover {
+    background-color: var(--dropBackgroundColor);
+
+}
+
+/*  */
+/* Search section Start  */
+#search-section .search-area {
+    border-radius: 80px;
+    padding: 15px 50px;
+    font-family: var(--PoppinsFont);
+    font-weight: 600;
+}
+
+#search-section .search-area select {
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-bottom: 3px;
+    cursor: pointer;
+
+}
+
+#search-section .search-area input {
+    border: 1px solid var(--whiteColor);
+    outline: none;
+}
+
+#search-section .search-area input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--bt-colorSecondary);
+}
+
+#search-section .search-area button {
+    padding: 12px 30px;
+}
+
+/* Search section End  */
+
+
+/* About section Start */
+#about-section {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    font-weight: 500;
+
+}
+
+#about-section .image {
+    border-radius: 80px 0 80px 80px;
+    overflow: hidden;
+}
+
+#about-section .image img {
+    width: 100%;
+}
+
+/* About section End */
+
+
+
+/*features section Start  */
+#features svg {
+    font-size: 20px;
+    color: var(--orangeColor);
+    cursor: pointer;
+
+}
+
+/*features section End  */
+
+/*property section Start  */
+#property-section,
+#blog-section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #eeeeee;
+    border-radius: 20px;
+
+}
+
+#property-section .text-right a,
+#blog-section .text-right a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    float: right;
+    transition: 1s ease;
+
+}
+
+#property-section #property-slider {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+
+
+}
+
+#property-slider .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#property-slider .swiper .swiper-slide .property-list {
+
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 0px 30px 0px 30px;
+    color: #000000;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+#property-slider .swiper .swiper-slide .property-list:hover {
+    background-color: var(--navHoverColor);
+}
+
+#property-slider .swiper .swiper-slide .property-list p {
+    font-weight: 500;
+}
+
+#property-slider .swiper .swiper-slide .property-list .image {
+    width: 100%;
+    height: 200px;
+    border-radius: 0px 30px 0px 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#property-slider .swiper .swiper-slide .property-list .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.property-list:hover .btn-main {
+    background-color: var(--orangeColor);
+
+
+}
+
+/*property section End  */
+
+/* work Section Start */
+#work-section {
+    width: 100%;
+
+}
+
+#work-section .work-show {
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 0px 30px 0px 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+#work-section .work-show .fas {
+    padding: 20px;
+    width: 62px;
+    background-color: #eeeeee;
+    color: var(--orangeColor);
+    font-size: 20px;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#work-section .work-show:hover {
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 15);
+    background-color: var(--navHoverColor);
+}
+
+/* work Section End */
+
+/*mail Section Start  */
+#mail-section {
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+
+}
+
+#mail-section .form {
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+#mail-section .form input {
+    padding: 15px 0px;
+    border-radius: 30px;
+    border: none;
+}
+
+#mail-section .form input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+#mail-section .form button {
+    padding: 12px 40px;
+
+}
+
+/*mail Section End  */
+
+/* footer section Start */
+footer {
+    background-color: var(--backgroundMainColor);
+    color: var(--whiteColor);
+    border-radius: 80px 0 0 0;
+}
+
+#footer .nav .nav-item .nav-link {
+    color: var(--whiteColor);
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.btn-foot {
+    background-color: var(--orangeColor);
+    margin: 0 10px;
+    color: var(--whiteColor);
+
+}
+
+.btn-foot:hover {
+    background-color: var(--backgroundMainColor-sp);
+    color: var(--whiteColor);
+}
+
+/* footer section End */
+
+
+.active {
+    background-color: var(--backgroundMainColor) !important;
+    color: var(--whiteColor);
+}
+
+.registerForm {
+    display: none;
+}
+
+.t-login {
+    font-size: 2.2rem;
+}
+
+.col-s {
+    position: relative;
+}
+
+.col-scroll {
+    position: absolute;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.link-light:hover {
+    color: var(--orangeColor);
+
+}
+
+/*  */
+
+.card-cover {
+    cursor: pointer;
+    transition: background .5s;
+    border-radius: 30 0px 30px 0;
+
+}
+
+.card-cover h2 {
+    color: var(--orangeColor);
+}
+
+.card-cover:hover,
+.ads-card:hover {
+    background-color: var(--navHoverColor);
+
+}
+
+.card-cover:hover a,
+.ads-card:hover a {
+    background-color: var(--orangeColor);
+}
+
+.icon-card {
+    width: 6rem
+}
+
+/* #profile page  */
+/*  Advertised-Homes section Start */
+#uploadBtn,#crud{
+    display: none;
+}
+.ads-card {
+    /* width: 47%; */
+    
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.in-disabled:disabled {
+    background: var(--whiteColor);
+    border: 0;
+}
+
+/*  Advertised-Homes section End */
+/* #profile page  End*/
+
+
+
+
+/* Preloder */
+
+#preloder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background: #154b5c7e;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    border-radius: 60px;
+    animation: loader 0.8s linear infinite;
+    -webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        border: 4px solid #f44336;
+        border-left-color: transparent;
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        border: 4px solid #673ab7;
+        border-left-color: transparent;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        border: 4px solid #f44336;
+        border-left-color: transparent;
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        border: 4px solid #f44336;
+        border-left-color: transparent;
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        border: 4px solid #673ab7;
+        border-left-color: transparent;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        border: 4px solid #f44336;
+        border-left-color: transparent;
+    }
+}
+
+/* #Blog Page Start */
+
+.lft-caption {
+    left: 0;
+    right: auto;
+    padding: 3rem;
+    bottom: auto;
+    top: 20%;
+
+}
+
+.lft-caption-light {
+    padding: 3rem;
+    bottom: auto;
+    top: 20%;
+    right: 0;
+    left: auto;
+    color: var(--heroH2Color);
+}
+
+.pagination .page-link {
+    background-color: var(--backgroundMainColor);
+    color: var(--whiteColor);
+}
+
+.pagination .active .page-link {
+    background-color: #216566b9;
+    border-color: var(--backgroundMainColor);
+
+}
+
+/* #Blog Page End */
+#toggleDark {
+    cursor: pointer;
+}
+
+/*  */
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.aqua-gradient {
+    background: linear-gradient(40deg, #216566, #05ffa3) !important;
+}
+
+.testimonial-card .avatar {
+    width: 120px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+/*  */
+
+.btn-nav {
+    color: var(--whiteColor);
+    border-radius: 10px;
+    background-color: var(--navHoverColor);
+}
+
+.btn-nav:hover {
+    color: var(--whiteColor);
+    background-color: #407e80ad;
+
+}
+
+/*  */
+
+.btn-log {
+    color: var(--whiteColor);
+    width: 100%;
+    background-color: var(--backgroundMainColor);
+}
+
+.btn-log:hover {
+    color: var(--whiteColor);
+}
+
+
+/* sales-procedures page Start */
+/* ## (3) sales-procedures Start ## */
+
+#frequencyRent,
+#paymentOptionsForSale {
+    display: none;
+}
+
+#dropbox {
+    border: 2px dashed #ccc;
+    padding: 25px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ## (3) sales-procedures End  ## */
+/* sales-procedures page End */
+
+
